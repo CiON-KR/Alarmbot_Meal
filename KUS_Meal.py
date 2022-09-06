@@ -32,4 +32,3 @@ with open ('Update_Date.txt', 'r+') as f_read :
         repo = Github("****************************************").get_user().get_repo("Alarmbot_Meal")
         file = repo.get_contents('Update_Date.txt')
         repo.update_file('Update_Date.txt','',url,file.sha)
-    f_read.close()
